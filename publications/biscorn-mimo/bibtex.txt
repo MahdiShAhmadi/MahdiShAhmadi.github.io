@@ -1,0 +1,9 @@
+@ARTICLE{biscorn_mimo,
+  author={Rezaei, Omid and Ahmadi, Mahdi and Naghsh, Mohammad Mahdi and Aubry, Augusto and Nayebi, Mohammad Mahdi and De Maio, Antonio},
+  journal={IEEE Transactions on Aerospace and Electronic Systems}, 
+  title={A Learning-Inspired Strategy to Design Binary Sequences With Good Correlation Properties: SISO and MIMO Radar Systems}, 
+  year={2023},
+  volume={59},
+  number={5},
+  pages={6637-6657},
+  doi={10.1109/TAES.2023.3280468}}

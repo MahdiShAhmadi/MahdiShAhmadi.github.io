@@ -1,0 +1,9 @@
+@INPROCEEDINGS{biscorn,
+  author={Rezaei, Omid and Ahmadi, Mahdi and Naghsh, Mohammad Mahdi},
+  booktitle={2020 IEEE Radar Conference (RadarConf20)}, 
+  title={A Learning Approach to Design Binary Sequences with Good Correlation Properties}, 
+  year={2020},
+  volume={},
+  number={},
+  pages={1-6},
+  doi={10.1109/RadarConf2043947.2020.9266467}}

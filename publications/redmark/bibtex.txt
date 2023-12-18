@@ -1,0 +1,9 @@
+@article{Redmark,
+  title={ReDMark: Framework for Residual Diffusion Watermarking based on Deep Networks},
+  author={Ahmadi, Mahdi and Norouzi, Alireza and Karimi, Nader and Samavi, Shadrokh and Emami, Ali},
+  journal={Expert Systems with Applications},
+  pages={113157},
+  year={2019},
+  volume={146},
+  publisher={Elsevier}
+}
