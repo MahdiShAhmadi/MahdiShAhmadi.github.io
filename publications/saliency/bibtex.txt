@@ -1,0 +1,8 @@
+@inproceedings{saliency,
+  title={Context-aware saliency map generation using semantic segmentation},
+  author={Ahmadi, Mahdi and Hajabdollahi, Mohsen and Karimi, Nader and Samavi, Shadrokh},
+  booktitle={Electrical Engineering (ICEE), Iranian Conference on},
+  pages={616--620},
+  year={2018},
+  organization={IEEE}
+}

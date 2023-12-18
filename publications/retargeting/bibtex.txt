@@ -1,0 +1,9 @@
+@article{retargeting,
+  title={Context-aware saliency detection for image retargeting using convolutional neural networks},
+  author={Ahmadi, Mahdi and Karimi, Nader and Samavi, Shadrokh},
+  journal={Multimedia Tools and Applications},
+  volume={80},
+  pages={11917--11941},
+  year={2021},
+  publisher={Springer}
+}

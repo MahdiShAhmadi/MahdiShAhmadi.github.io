@@ -1,0 +1,6 @@
+@article{brain,
+  title={Brain tumor segmentation using deep learning by type specific sorting of images},
+  author={Sobhaninia, Zahra and Rezaei, Safiyeh and Noroozi, Alireza and Ahmadi, Mehdi and Zarrabi, Hamidreza and Karimi, Nader and Emami, Ali and Samavi, Shadrokh},
+  journal={arXiv preprint arXiv:1809.07786},
+  year={2018}
+}

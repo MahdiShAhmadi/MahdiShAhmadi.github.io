@@ -1,0 +1,8 @@
+@inproceedings{artistic,
+  title={Artistic Instance-Aware Image Filtering by Convolutional Neural Networks},
+  author={Tehrani, Milad and Bagheri, Mahnoosh and Ahmadi, Mahdi and Norouzi, Alireza and Karimi, Nader and Samavi, Shadrokh},
+  booktitle={2018 9th International Symposium on Telecommunications (IST)},
+  pages={710--714},
+  year={2018},
+  organization={IEEE}
+}

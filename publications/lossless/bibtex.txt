@@ -1,0 +1,8 @@
+@inproceedings{lossless,
+  title={Lossless Compression of Angiogram Foreground with Visual Quality Preservation of Background},
+  author={Ahmadi, Mahdi and Emami, Ali and Hajabdollahi, Mohsen and Soroushmehr, SM Reza and Karimi, Nader and Samavi, Shadrokh and Najarian, Kayvan},
+  booktitle={2018 40th Annual International Conference of the IEEE Engineering in Medicine and Biology Society (EMBC)},
+  pages={5158--5161},
+  year={2018},
+  organization={IEEE}
+}
