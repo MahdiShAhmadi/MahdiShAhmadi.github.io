@@ -1,0 +1,7 @@
+@inproceedings{ahmadi2024fair,
+  title     = {Fair Image Generation from Pre-trained Models by Probabilistic Modeling},
+  author    = {Ahmadi, Mahdi and Leland, John and Chatterjee, Agneet and Choi, YooJung},
+  booktitle = {Safe Generative AI Workshop at NeurIPS},
+  year      = {2024},
+  url       = {https://openreview.net/forum?id=e7zwwncDYr}
+}
