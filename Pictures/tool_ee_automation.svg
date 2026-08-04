@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title">
+  <title id="title">Industrial automation</title>
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="3">
+    <rect x="9" y="13" width="46" height="38" rx="5" stroke="#2563eb"/>
+    <path d="M17 22h20v8H17zm0 15h12m8 0h10m-30 7h8m8 0h14" stroke="#0fa89a"/>
+    <circle cx="46" cy="26" r="4" stroke="#2563eb"/>
+  </g>
+</svg>

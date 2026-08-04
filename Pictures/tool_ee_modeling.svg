@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title">
+  <title id="title">Numerical modeling and simulation</title>
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="3">
+    <path d="M12 10v42h42" stroke="#2563eb"/>
+    <path d="M16 40c7 0 8-18 16-18s9 18 17 18" stroke="#0fa89a"/>
+    <path d="M18 16h10M18 48h8M50 46v6" stroke="#2563eb"/>
+  </g>
+</svg>

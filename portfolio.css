@@ -107,6 +107,10 @@
   grid-template-columns: repeat(auto-fit, minmax(155px, 1fr));
 }
 
+.ee-tool-grid {
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+}
+
 .icon-card,
 .tool-item,
 .project-card {
@@ -143,6 +147,40 @@
   height: 30px;
   flex: 0 0 30px;
   object-fit: contain;
+}
+
+.tool-item-detailed {
+  align-items: flex-start;
+  min-height: 104px;
+  padding: 1rem;
+}
+
+.tool-item-detailed img {
+  width: 42px;
+  height: 42px;
+  flex-basis: 42px;
+  padding: 0.4rem;
+  border-radius: 12px;
+  background: linear-gradient(135deg, rgba(37, 99, 235, 0.1), rgba(15, 168, 154, 0.12));
+}
+
+.tool-copy {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  gap: 0.22rem;
+}
+
+.tool-copy strong {
+  color: var(--mahdi-ink);
+  font-size: 0.94rem;
+  line-height: 1.25;
+}
+
+.tool-copy small {
+  color: #52657d;
+  font-size: 0.8rem;
+  line-height: 1.45;
 }
 
 .project-grid {
@@ -206,6 +244,14 @@ body.dark-mode .publication-visual {
 
 body.dark-mode .publication-title a {
   color: #f2f4f7;
+}
+
+body.dark-mode .tool-copy strong {
+  color: #edf5ff;
+}
+
+body.dark-mode .tool-copy small {
+  color: #b8c8dc;
 }
 
 body.dark-mode .publication-authors,

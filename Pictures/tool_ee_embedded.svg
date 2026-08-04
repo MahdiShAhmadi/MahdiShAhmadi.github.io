@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title">
+  <title id="title">Embedded development</title>
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="3">
+    <rect x="17" y="17" width="30" height="30" rx="5" stroke="#2563eb"/>
+    <path d="M24 9v8m8-8v8m8-8v8M24 47v8m8-8v8m8-8v8M9 24h8M9 32h8M9 40h8m30-16h8m-8 8h8m-8 8h8" stroke="#2563eb"/>
+    <path d="M25 28h14v8H25z" stroke="#0fa89a"/>
+  </g>
+</svg>
