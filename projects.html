@@ -3001,76 +3001,6 @@ body.dark-mode {
   color: #ffffff !important;
 }
 
-.terminal-window {
-  background-color: #1e1e1e;
-  border-radius: 10px;
-  overflow: hidden;
-  width: 95%;
-  max-width: 600px;
-  margin-bottom: 2rem;
-  margin-right: auto;
-  margin-left: auto;
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.4);
-  font-family: 'Courier New', monospace;
-  color: #eeeeee;
-}
-
-.terminal-header {
-  background-color: #2d2d2d;
-  padding: 10px;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.circle {
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  display: inline-block;
-}
-
-.red {
-  background-color: #ff5f56;
-}
-.yellow {
-  background-color: #ffbd2e;
-}
-.green {
-  background-color: #27c93f;
-}
-
-.terminal-body {
-  padding: 20px;
-  min-height: 6rem;
-  font-size: 0.8rem;
-  background-color: #1e1e1e;
-  color: #eee;
-}
-
-.typed-cursor {
-  display: inline-block;
-  color: #00ff99;
-  animation: blink 0.7s steps(1) infinite;
-}
-
-@keyframes blink {
-  50% {
-    opacity: 0;
-  }
-}
-
-
-
-
-
-#profile-pic {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  object-fit: cover;
-}
-
 </style>
 
     <title>Mahdi Ahmadi | Computer Science and AI Projects</title>
@@ -3127,37 +3057,17 @@ body.dark-mode {
         </header>
     </div>
 
-    <section id=about class="home-section wg-about">
-        <div class=home-section-bg></div>
-        <div class=container>
-            <div class=row>
-                <div class="col-12 col-lg-4">
-                    <div id=profile>
-                        <img
-                        id="profile-pic"
-                        class="avatar avatar-circle"
-                        src="home/profile3.jpg"
-                        alt="Mahdi Ahmadi"
-                        width="150"
-                        height="150">
-                    </div>
-                    <div class="terminal-window">
-                        <div class="terminal-header">
-                            <span class="circle red"></span>
-                            <span class="circle yellow"></span>
-                            <span class="circle green"></span>
-                        </div>
-                        <div class="terminal-body">
-                            <span id="typed-text"></span><span class="typed-cursor">|</span>
-                        </div>
-                    </div>
+    <section id="projects-overview" class="home-section wg-features">
+        <div class="home-section-bg"></div>
+        <div class="container">
+            <div class="row">
+                <div class="section-heading col-12 col-lg-4 mb-3 mb-lg-0 d-flex flex-column align-items-center align-items-lg-start">
+                    <h1 class="mb-0">Computer Science &amp; AI Projects</h1>
                 </div>
-
                 <div class="col-12 col-lg-8">
-                    <h1>Computer Science &amp; AI Projects</h1>
-                    <div class=article-style>
-                        <p style="text-align: justify;">This page brings together my current machine-learning research, open-source computer-vision work, and production AI systems. The projects span probabilistic modeling, generative AI, causal inference, NLP, recommendation, safety, anomaly detection, and reproducible ML workflows.</p>
-                        <p style="text-align: justify;">Research projects emphasize clear modeling assumptions and repeatable evaluation; industry projects emphasize measurable product impact, reliable deployment, and collaboration across engineering and operations.</p>
+                    <div class="article-style">
+                        <p>This page brings together my current machine-learning research, open-source computer-vision work, and production AI systems. The projects span probabilistic modeling, generative AI, causal inference, NLP, recommendation, safety, anomaly detection, and reproducible ML workflows.</p>
+                        <p>Research projects emphasize clear modeling assumptions and repeatable evaluation; industry projects emphasize measurable product impact, reliable deployment, and collaboration across engineering and operations.</p>
                     </div>
                 </div>
             </div>
@@ -3340,51 +3250,6 @@ body.dark-mode {
         metaThemeColor.setAttribute("content", document.body.classList.contains("dark-mode") ? "#121212" : "#ffffff");
         localStorage.setItem("theme", document.body.classList.contains("dark-mode") ? "dark" : "light");
       });
-    });
-    </script>
-
-    <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      const sentences = [
-        "Research and production AI systems.",
-        "Probabilistic modeling, generative AI, and causal inference.",
-        "Computer vision, NLP, recommendation, and safety.",
-        "Reproducible research and measurable product impact.",
-        "Open-source work and scalable ML workflows."
-      ];
-
-      const textElement = document.getElementById("typed-text");
-      if (!textElement) return;
-
-      let sentenceIndex = 0;
-      let charIndex = 0;
-      let typing = true;
-
-      function typeLoop() {
-        const current = sentences[sentenceIndex];
-        if (typing) {
-          if (charIndex < current.length) {
-            textElement.textContent += current.charAt(charIndex);
-            charIndex++;
-            setTimeout(typeLoop, 50);
-          } else {
-            typing = false;
-            setTimeout(typeLoop, 1400);
-          }
-        } else {
-          if (charIndex > 0) {
-            textElement.textContent = current.substring(0, charIndex - 1);
-            charIndex--;
-            setTimeout(typeLoop, 30);
-          } else {
-            typing = true;
-            sentenceIndex = (sentenceIndex + 1) % sentences.length;
-            setTimeout(typeLoop, 400);
-          }
-        }
-      }
-
-      typeLoop();
     });
     </script>
 
