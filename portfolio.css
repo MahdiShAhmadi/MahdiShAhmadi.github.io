@@ -85,6 +85,14 @@
   margin-top: 0.65rem;
 }
 
+.summary-link {
+  margin: 1.25rem 0 0;
+}
+
+.mobile-navbar a[aria-current="page"] {
+  color: #2962ff;
+}
+
 .icon-grid,
 .tool-grid {
   display: grid;
@@ -209,6 +217,10 @@ body.dark-mode .project-kicker {
 body.dark-mode .project-tag {
   background: #243b63;
   color: #d9e6ff;
+}
+
+body.dark-mode .mobile-navbar a[aria-current="page"] {
+  color: #8db2ff;
 }
 
 @media (max-width: 767.98px) {

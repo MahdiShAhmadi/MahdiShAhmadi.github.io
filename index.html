@@ -3070,14 +3070,6 @@ body.dark-mode {
   height: 150px;
   border-radius: 50%;
   object-fit: cover;
-  transition: all 0.4s ease;
-  cursor: pointer;
-}
-
-#profile-pic.hover-animate {
-  width: 150px;
-  height: 220px; /* adjust to your GIF height */
-  border-radius: 10px; /* rectangular with soft corners */
 }
 
 </style>
@@ -3098,7 +3090,7 @@ body.dark-mode {
         <header>
             <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navbar-main">
                 <div class="container-xl">
-                    <a class="navbar-brand" href="https://mahdishahmadi.github.io">Mahdi Ahmadi</a>
+                    <a class="navbar-brand" href="index.html">Mahdi Ahmadi</a>
                     <div class="theme-toggle">
                         <input type="checkbox" id="theme-switch">
                         <label for="theme-switch" class="toggle-label">
@@ -3110,12 +3102,12 @@ body.dark-mode {
                     </button>
                     <div class="collapse navbar-collapse" id="navbar-content">
                         <ul class="navbar-nav ml-auto">
-                            <li class="nav-item"><a class="nav-link active" href="#top">Home</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#teaching">Teaching</a></li>
+                            <li class="nav-item"><a class="nav-link active" href="index.html" aria-current="page">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="education.html">Education</a></li>
+                            <li class="nav-item"><a class="nav-link" href="teaching.html">Teaching</a></li>
                             <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
                             <li class="nav-item"><a class="nav-link" href="ee.html">EE</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#publications">Publications</a></li>
+                            <li class="nav-item"><a class="nav-link" href="publications.html">Publications</a></li>
                         </ul>
 
                     </div>
@@ -3124,12 +3116,12 @@ body.dark-mode {
 
             <nav class="mobile-navbar d-lg-none">
                 <ul>
-                    <li><a href="#top">Home</a></li>
-                    <li><a href="#education">Education</a></li>
-                    <li><a href="#teaching">Teaching</a></li>
+                    <li><a href="index.html" aria-current="page">Home</a></li>
+                    <li><a href="education.html">Education</a></li>
+                    <li><a href="teaching.html">Teaching</a></li>
                     <li><a href="projects.html">Projects</a></li>
                     <li><a href="ee.html">EE</a></li>
-                    <li><a href="#publications">Publications</a></li>
+                    <li><a href="publications.html">Publications</a></li>
                 </ul>
             </nav>
 
@@ -3250,194 +3242,48 @@ body.dark-mode {
                     <h1 class=mb-0>Publications</h1>
                 </div>
                 <div class="col-12 col-lg-8">
-                    <div class="publication-list">
-                        <article class="publication-card">
-                            <div class="publication-visual publication-placeholder" aria-hidden="true">
-                                <i class="far fa-file-image"></i>
-                                <span>SafeGenAI · NeurIPS 2024</span>
-                            </div>
-                            <div class="publication-content">
-                                <h2 class="publication-title"><a href="https://openreview.net/forum?id=e7zwwncDYr" target="_blank" rel="noopener">Fair Image Generation from Pre-trained Models by Probabilistic Modeling</a></h2>
-                                <div class="publication-authors"><strong>Mahdi Ahmadi</strong>, John Leland, Agneet Chatterjee, YooJung Choi</div>
-                                <div class="publication-venue">SafeGenAI Workshop at NeurIPS, 2024</div>
-                                <div class="publication-actions">
-                                    <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://openreview.net/forum?id=e7zwwncDYr" target="_blank" rel="noopener">Paper</a>
-                                    <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://neurips.cc/virtual/2024/106221" target="_blank" rel="noopener">Workshop</a>
-                                </div>
-                            </div>
-                        </article>
-
-                        <article class="publication-card">
-                            <a class="publication-visual" href="https://ieeexplore.ieee.org/abstract/document/10138370" target="_blank" rel="noopener">
-                                <img src="publications/biscorn-mimo/biscorn-mimo-css.png" alt="SISO and MIMO radar sequence-design results" loading="lazy">
-                            </a>
-                            <div class="publication-content">
-                                <h2 class="publication-title"><a href="https://ieeexplore.ieee.org/abstract/document/10138370" target="_blank" rel="noopener">A Learning-Inspired Strategy to Design Binary Sequences With Good Correlation Properties: SISO and MIMO Radar Systems</a></h2>
-                                <div class="publication-authors">O. Rezaei, <strong>M. Ahmadi</strong>, M.M. Naghsh, A. Aubry, M.M. Nayebi, A. De Maio</div>
-                                <div class="publication-venue">IEEE Transactions on Aerospace and Electronic Systems, 2023</div>
-                                <div class="publication-actions">
-                                    <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://ieeexplore.ieee.org/abstract/document/10138370" target="_blank" rel="noopener">Paper</a>
-                                    <a class="btn btn-outline-primary btn-page-header btn-sm" href="publications/biscorn-mimo/bibtex.txt">BibTeX</a>
-                                </div>
-                            </div>
-                        </article>
-
-                        <article class="publication-card">
-                            <a class="publication-visual" href="https://link.springer.com/article/10.1007/s11042-020-10185-0" target="_blank" rel="noopener">
-                                <img src="publications/retargeting/retargeting.png" alt="Image-retargeting and saliency-detection examples" loading="lazy">
-                            </a>
-                            <div class="publication-content">
-                                <h2 class="publication-title"><a href="https://link.springer.com/article/10.1007/s11042-020-10185-0" target="_blank" rel="noopener">Context-aware Saliency Detection for Image Retargeting Using Convolutional Neural Networks</a></h2>
-                                <div class="publication-authors"><strong>M. Ahmadi</strong>, N. Karimi, S. Samavi</div>
-                                <div class="publication-venue">Multimedia Tools and Applications, 2021</div>
-                                <div class="publication-actions">
-                                    <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://link.springer.com/article/10.1007/s11042-020-10185-0" target="_blank" rel="noopener">Paper</a>
-                                    <a class="btn btn-outline-primary btn-page-header btn-sm" href="publications/retargeting/bibtex.txt">BibTeX</a>
-                                </div>
-                            </div>
-                        </article>
-
-                        <article class="publication-card">
-                            <a class="publication-visual" href="https://www.sciencedirect.com/science/article/abs/pii/S0957417419308759" target="_blank" rel="noopener">
-                                <img src="publications/redmark/redmark1.png" alt="ReDMark deep-learning watermarking framework" loading="lazy">
-                            </a>
-                            <div class="publication-content">
-                                <h2 class="publication-title"><a href="https://www.sciencedirect.com/science/article/abs/pii/S0957417419308759" target="_blank" rel="noopener">ReDMark: Framework for Residual Diffusion Watermarking by Deep Networks</a></h2>
-                                <div class="publication-authors"><strong>M. Ahmadi</strong>, A. Norouzi, N. Karimi, S. Samavi, A. Emami</div>
-                                <div class="publication-venue">Expert Systems with Applications, 2020</div>
-                                <div class="publication-actions">
-                                    <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://www.sciencedirect.com/science/article/abs/pii/S0957417419308759" target="_blank" rel="noopener">Paper</a>
-                                    <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://github.com/MahdiShAhmadi/ReDMark" target="_blank" rel="noopener">Code</a>
-                                    <a class="btn btn-outline-primary btn-page-header btn-sm" href="publications/redmark/bibtex.txt">BibTeX</a>
-                                </div>
-                            </div>
-                        </article>
-
-                        <article class="publication-card">
-                            <a class="publication-visual" href="https://ieeexplore.ieee.org/abstract/document/9116888" target="_blank" rel="noopener">
-                                <img src="publications/seam/seam.png" alt="Controlled seam-carving examples" loading="lazy">
-                            </a>
-                            <div class="publication-content">
-                                <h2 class="publication-title"><a href="https://ieeexplore.ieee.org/abstract/document/9116888" target="_blank" rel="noopener">Image Seam-Carving by Controlling Positional Distribution of Seams</a></h2>
-                                <div class="publication-authors"><strong>M. Ahmadi</strong>, N. Karimi, S. Samavi</div>
-                                <div class="publication-venue">International Conference on Machine Vision and Image Processing, 2020</div>
-                                <div class="publication-actions">
-                                    <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://ieeexplore.ieee.org/abstract/document/9116888" target="_blank" rel="noopener">Paper</a>
-                                    <a class="btn btn-outline-primary btn-page-header btn-sm" href="publications/seam/bibtex.txt">BibTeX</a>
-                                </div>
-                            </div>
-                        </article>
-
-                        <article class="publication-card">
-                            <a class="publication-visual" href="https://ieeexplore.ieee.org/abstract/document/9266467" target="_blank" rel="noopener">
-                                <img src="publications/biscorn/biscorn.png" alt="Binary sequence correlation optimization results" loading="lazy">
-                            </a>
-                            <div class="publication-content">
-                                <h2 class="publication-title"><a href="https://ieeexplore.ieee.org/abstract/document/9266467" target="_blank" rel="noopener">A Learning Approach to Design Binary Sequences with Good Correlation Properties</a></h2>
-                                <div class="publication-authors">O. Rezaei, <strong>M. Ahmadi</strong>, M.M. Naghsh</div>
-                                <div class="publication-venue">IEEE Radar Conference, 2020</div>
-                                <div class="publication-actions">
-                                    <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://ieeexplore.ieee.org/abstract/document/9266467" target="_blank" rel="noopener">Paper</a>
-                                    <a class="btn btn-outline-primary btn-page-header btn-sm" href="publications/biscorn/bibtex.txt">BibTeX</a>
-                                </div>
-                            </div>
-                        </article>
-
-                        <article class="publication-card">
-                            <a class="publication-visual" href="https://ieeexplore.ieee.org/abstract/document/8661048" target="_blank" rel="noopener">
-                                <img src="publications/artistic/artistic.png" alt="Artistic instance-aware image filtering examples" loading="lazy">
-                            </a>
-                            <div class="publication-content">
-                                <h2 class="publication-title"><a href="https://ieeexplore.ieee.org/abstract/document/8661048" target="_blank" rel="noopener">Artistic Instance-Aware Image Filtering by Convolutional Neural Networks</a></h2>
-                                <div class="publication-authors">M. Tehrani, M. Bagheri, <strong>M. Ahmadi</strong>, A. Noroozi, N. Karimi, S. Samavi</div>
-                                <div class="publication-venue">International Symposium on Telecommunications, 2018</div>
-                                <div class="publication-actions">
-                                    <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://ieeexplore.ieee.org/abstract/document/8661048" target="_blank" rel="noopener">Paper</a>
-                                    <a class="btn btn-outline-primary btn-page-header btn-sm" href="publications/artistic/bibtex.txt">BibTeX</a>
-                                </div>
-                            </div>
-                        </article>
-
-                        <article class="publication-card">
-                            <a class="publication-visual" href="https://ieeexplore.ieee.org/abstract/document/8472577" target="_blank" rel="noopener">
-                                <img src="publications/saliency/saliency.png" alt="Semantic-segmentation saliency-map examples" loading="lazy">
-                            </a>
-                            <div class="publication-content">
-                                <h2 class="publication-title"><a href="https://ieeexplore.ieee.org/abstract/document/8472577" target="_blank" rel="noopener">Context-Aware Saliency Map Generation Using Semantic Segmentation</a></h2>
-                                <div class="publication-authors"><strong>M. Ahmadi</strong>, M. Hajabdollahi, N. Karimi, S. Samavi</div>
-                                <div class="publication-venue">Iranian Conference on Electrical Engineering, 2018</div>
-                                <div class="publication-actions">
-                                    <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://ieeexplore.ieee.org/abstract/document/8472577" target="_blank" rel="noopener">Paper</a>
-                                    <a class="btn btn-outline-primary btn-page-header btn-sm" href="publications/saliency/bibtex.txt">BibTeX</a>
-                                </div>
-                            </div>
-                        </article>
-
-                        <article class="publication-card">
-                            <a class="publication-visual" href="https://ieeexplore.ieee.org/abstract/document/8513426" target="_blank" rel="noopener">
-                                <img src="publications/lossless/lossless.png" alt="Angiogram foreground-compression pipeline" loading="lazy">
-                            </a>
-                            <div class="publication-content">
-                                <h2 class="publication-title"><a href="https://ieeexplore.ieee.org/abstract/document/8513426" target="_blank" rel="noopener">Lossless Compression of Angiogram Foreground with Visual Quality Preservation of Background</a></h2>
-                                <div class="publication-authors"><strong>M. Ahmadi</strong>, A. Emami, M. Hajabdollahi, S.M.R. Soroushmehr, N. Karimi, S. Samavi, K. Najarian</div>
-                                <div class="publication-venue">IEEE Engineering in Medicine and Biology Society Conference, 2018</div>
-                                <div class="publication-actions">
-                                    <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://ieeexplore.ieee.org/abstract/document/8513426" target="_blank" rel="noopener">Paper</a>
-                                    <a class="btn btn-outline-primary btn-page-header btn-sm" href="publications/lossless/bibtex.txt">BibTeX</a>
-                                </div>
-                            </div>
-                        </article>
-
-                        <article class="publication-card">
-                            <a class="publication-visual" href="https://arxiv.org/abs/1809.07786" target="_blank" rel="noopener">
-                                <img src="publications/brain/brain.png" alt="Deep-learning brain-tumor segmentation pipeline" loading="lazy">
-                            </a>
-                            <div class="publication-content">
-                                <h2 class="publication-title"><a href="https://arxiv.org/abs/1809.07786" target="_blank" rel="noopener">Brain Tumor Segmentation Using Deep Learning by Type-Specific Sorting of Images</a></h2>
-                                <div class="publication-authors">Z. Sobhaninia, S. Rezaei, A. Noroozi, <strong>M. Ahmadi</strong>, H. Zarrabi, N. Karimi, A. Emami, S. Samavi</div>
-                                <div class="publication-venue">arXiv preprint, 2018</div>
-                                <div class="publication-actions">
-                                    <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://arxiv.org/abs/1809.07786" target="_blank" rel="noopener">Paper</a>
-                                    <a class="btn btn-outline-primary btn-page-header btn-sm" href="publications/brain/bibtex.txt">BibTeX</a>
-                                </div>
-                            </div>
-                        </article>
+                    <div class="pub-list-item view-citation" style="margin-bottom:1rem;"><i class="far fa-file-alt pub-icon" aria-hidden=true></i>
+                        <b>Fair Image Generation from Pre-trained Models by Probabilistic Modeling</b>
+                        <br>
+                        <span class="article-metadata li-cite-author">Mahdi Ahmadi, John Leland, Agneet Chatterjee, YooJung Choi</span>
+                        <br>SafeGenAI Workshop at NeurIPS 2024, <a href="https://openreview.net/forum?id=e7zwwncDYr" target="_blank" rel="noopener">OpenReview</a>
+                        <br><a class="btn btn-outline-primary btn-page-header btn-sm" href="https://openreview.net/forum?id=e7zwwncDYr" target="_blank" rel="noopener">Paper</a>
+                        <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://neurips.cc/virtual/2024/106221" target="_blank" rel="noopener">Workshop Page</a>
                     </div>
+
+                    <div class="pub-list-item view-citation" style="margin-bottom:1rem;"><i class="far fa-file-alt pub-icon" aria-hidden=true></i>
+                        <b>ReDMark: Framework for Residual Diffusion Watermarking by Deep Networks</b>
+                        <br>
+                        <span class="article-metadata li-cite-author">M. Ahmadi, A. Norouzi, N. Karimi, S. Samavi, A. Emami</span>
+                        <br>Expert Systems with Applications, 2020, <a href="https://www.sciencedirect.com/science/article/abs/pii/S0957417419308759" target="_blank" rel="noopener">DOI</a>
+                        <br><a class="btn btn-outline-primary btn-page-header btn-sm" href="https://www.sciencedirect.com/science/article/abs/pii/S0957417419308759" target="_blank" rel="noopener">Paper</a>
+                        <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://github.com/MahdiShAhmadi/ReDMark" target="_blank" rel="noopener">Code</a>
+                    </div>
+
+                    <div class="pub-list-item view-citation" style="margin-bottom:1rem;"><i class="far fa-file-alt pub-icon" aria-hidden=true></i>
+                        <b>A Learning-Inspired Strategy to Design Binary Sequences With Good Correlation Properties: SISO and MIMO Radar Systems</b>
+                        <br>
+                        <span class="article-metadata li-cite-author">O. Rezaei, M. Ahmadi, M.M. Naghsh, A. Aubry, M.M. Nayebi, A. De Maio</span>
+                        <br>IEEE Transactions on Aerospace and Electronic Systems, 2023
+                        <br><a class="btn btn-outline-primary btn-page-header btn-sm" href="https://ieeexplore.ieee.org/abstract/document/10138370" target="_blank" rel="noopener">Paper</a>
+                    </div>
+
+                    <div class="pub-list-item view-citation" style="margin-bottom:1rem;"><i class="far fa-file-alt pub-icon" aria-hidden=true></i>
+                        <b>Context-aware Saliency Detection for Image Retargeting Using Convolutional Neural Networks</b>
+                        <br>
+                        <span class="article-metadata li-cite-author">M. Ahmadi, N. Karimi, S. Samavi</span>
+                        <br>Multimedia Tools and Applications, 2021
+                        <br><a class="btn btn-outline-primary btn-page-header btn-sm" href="https://link.springer.com/article/10.1007/s11042-020-10185-0" target="_blank" rel="noopener">Paper</a>
+                    </div>
+
+                    <p class="summary-link"><a class="btn btn-primary btn-page-header" href="publications.html">View all publications</a></p>
+
                 </div>
             </div>
         </div>
     </section>
 
-    <script>
-    document.querySelectorAll('.navbar-nav .nav-link').forEach(link => {
-      link.addEventListener('click', function () {
-        document.querySelectorAll('.navbar-nav .nav-link').forEach(nav => {
-          nav.classList.remove('active');
-        });
-        this.classList.add('active');
-      });
-    });
-    </script>
 
-    <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      document.querySelectorAll('.mobile-navbar a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener("click", function (e) {
-          e.preventDefault();
-          const href = this.getAttribute("href");
-          if (href === "#" || href === "#top") {
-            window.scrollTo({ top: 0, behavior: "smooth" });
-          } else {
-            const target = document.querySelector(href);
-            if (!target) return;
-            const yOffset = -60;
-            const y = target.getBoundingClientRect().top + window.pageYOffset + yOffset;
-            window.scrollTo({ top: y, behavior: "smooth" });
-          }
-        });
-      });
-    });
-    </script>
 
     <script>
     document.addEventListener("DOMContentLoaded", function () {
@@ -3502,24 +3348,6 @@ body.dark-mode {
 
       typeLoop();
     });
-    </script>
-
-    <script>
-    const profilePic = document.getElementById("profile-pic");
-    if (profilePic) {
-      const staticImg = "home/profile3.jpg";
-      const animatedGif = "home/profile2.jpg";
-
-      profilePic.addEventListener("mouseenter", () => {
-        profilePic.src = animatedGif;
-        profilePic.classList.add("hover-animate");
-      });
-
-      profilePic.addEventListener("mouseleave", () => {
-        profilePic.src = staticImg;
-        profilePic.classList.remove("hover-animate");
-      });
-    }
     </script>
 
 </body>

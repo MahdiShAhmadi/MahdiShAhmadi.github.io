@@ -3070,14 +3070,6 @@ body.dark-mode {
   height: 150px;
   border-radius: 50%;
   object-fit: cover;
-  transition: all 0.4s ease;
-  cursor: pointer;
-}
-
-#profile-pic.hover-animate {
-  width: 150px;
-  height: 220px; /* adjust to your GIF height */
-  border-radius: 10px; /* rectangular with soft corners */
 }
 
 </style>
@@ -3111,11 +3103,11 @@ body.dark-mode {
                     <div class="collapse navbar-collapse" id="navbar-content">
                         <ul class="navbar-nav ml-auto">
                             <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                            <li class="nav-item"><a class="nav-link" href="index.html#education">Education</a></li>
-                            <li class="nav-item"><a class="nav-link" href="index.html#teaching">Teaching</a></li>
-                            <li class="nav-item"><a class="nav-link active" href="projects.html">Projects</a></li>
+                            <li class="nav-item"><a class="nav-link" href="education.html">Education</a></li>
+                            <li class="nav-item"><a class="nav-link" href="teaching.html">Teaching</a></li>
+                            <li class="nav-item"><a class="nav-link active" href="projects.html" aria-current="page">Projects</a></li>
                             <li class="nav-item"><a class="nav-link" href="ee.html">EE</a></li>
-                            <li class="nav-item"><a class="nav-link" href="index.html#publications">Publications</a></li>
+                            <li class="nav-item"><a class="nav-link" href="publications.html">Publications</a></li>
                         </ul>
 
                     </div>
@@ -3125,11 +3117,11 @@ body.dark-mode {
             <nav class="mobile-navbar d-lg-none">
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="index.html#education">Education</a></li>
-                    <li><a href="index.html#teaching">Teaching</a></li>
-                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="education.html">Education</a></li>
+                    <li><a href="teaching.html">Teaching</a></li>
+                    <li><a href="projects.html" aria-current="page">Projects</a></li>
                     <li><a href="ee.html">EE</a></li>
-                    <li><a href="index.html#publications">Publications</a></li>
+                    <li><a href="publications.html">Publications</a></li>
                 </ul>
             </nav>
 
@@ -3339,36 +3331,7 @@ body.dark-mode {
         </div>
     </section>
 
-    <script>
-    document.querySelectorAll('.navbar-nav .nav-link').forEach(link => {
-      link.addEventListener('click', function () {
-        document.querySelectorAll('.navbar-nav .nav-link').forEach(nav => {
-          nav.classList.remove('active');
-        });
-        this.classList.add('active');
-      });
-    });
-    </script>
 
-    <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      document.querySelectorAll('.mobile-navbar a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener("click", function (e) {
-          e.preventDefault();
-          const href = this.getAttribute("href");
-          if (href === "#" || href === "#top") {
-            window.scrollTo({ top: 0, behavior: "smooth" });
-          } else {
-            const target = document.querySelector(href);
-            if (!target) return;
-            const yOffset = -60;
-            const y = target.getBoundingClientRect().top + window.pageYOffset + yOffset;
-            window.scrollTo({ top: y, behavior: "smooth" });
-          }
-        });
-      });
-    });
-    </script>
 
     <script>
     document.addEventListener("DOMContentLoaded", function () {
@@ -3433,24 +3396,6 @@ body.dark-mode {
 
       typeLoop();
     });
-    </script>
-
-    <script>
-    const profilePic = document.getElementById("profile-pic");
-    if (profilePic) {
-      const staticImg = "home/profile3.jpg";
-      const animatedGif = "home/profile2.jpg";
-
-      profilePic.addEventListener("mouseenter", () => {
-        profilePic.src = animatedGif;
-        profilePic.classList.add("hover-animate");
-      });
-
-      profilePic.addEventListener("mouseleave", () => {
-        profilePic.src = staticImg;
-        profilePic.classList.remove("hover-animate");
-      });
-    }
     </script>
 
 </body>
