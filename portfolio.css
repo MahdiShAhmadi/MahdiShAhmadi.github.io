@@ -1,0 +1,258 @@
+/* Shared layouts for publication, project, education, and tool cards. */
+.publication-list,
+.project-grid {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.publication-card {
+  display: grid;
+  grid-template-columns: minmax(150px, 190px) minmax(0, 1fr);
+  gap: 1.25rem;
+  align-items: start;
+  padding: 1rem;
+  border: 1px solid #e3e7eb;
+  border-radius: 14px;
+  background: #fff;
+  box-shadow: 0 5px 18px rgba(31, 45, 61, 0.06);
+}
+
+.publication-visual {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 126px;
+  overflow: hidden;
+  border: 1px solid #edf0f2;
+  border-radius: 10px;
+  background: #f8fafc;
+}
+
+.publication-visual img {
+  display: block;
+  width: 100%;
+  height: 126px;
+  padding: 0.35rem;
+  object-fit: contain;
+  background: #fff;
+}
+
+.publication-placeholder {
+  flex-direction: column;
+  gap: 0.5rem;
+  color: #52667a;
+  text-align: center;
+  font-size: 0.82rem;
+  font-weight: 600;
+}
+
+.publication-placeholder i {
+  font-size: 2.25rem;
+  color: #2962ff;
+}
+
+.publication-title {
+  margin: 0 0 0.35rem;
+  font-size: 1.03rem;
+  line-height: 1.35;
+}
+
+.publication-content,
+.project-card {
+  min-width: 0;
+}
+
+.publication-title a {
+  color: inherit;
+}
+
+.publication-authors,
+.publication-venue {
+  margin-bottom: 0.35rem;
+  line-height: 1.5;
+}
+
+.publication-venue {
+  color: #52667a;
+}
+
+.publication-actions,
+.project-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin-top: 0.65rem;
+}
+
+.icon-grid,
+.tool-grid {
+  display: grid;
+  gap: 0.9rem;
+}
+
+.icon-grid {
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.tool-grid {
+  grid-template-columns: repeat(auto-fit, minmax(155px, 1fr));
+}
+
+.icon-card,
+.tool-item,
+.project-card {
+  border: 1px solid #e3e7eb;
+  border-radius: 12px;
+  background: #fff;
+}
+
+.icon-card,
+.tool-item {
+  display: flex;
+  align-items: center;
+}
+
+.icon-card {
+  gap: 0.8rem;
+  padding: 0.9rem;
+}
+
+.icon-card img {
+  width: 56px;
+  height: 56px;
+  flex: 0 0 56px;
+  object-fit: contain;
+}
+
+.tool-item {
+  gap: 0.65rem;
+  padding: 0.75rem;
+}
+
+.tool-item img {
+  width: 30px;
+  height: 30px;
+  flex: 0 0 30px;
+  object-fit: contain;
+}
+
+.project-grid {
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.project-card {
+  padding: 1.1rem;
+  box-shadow: 0 5px 18px rgba(31, 45, 61, 0.05);
+}
+
+.project-card h2,
+.project-card h3 {
+  margin: 0.2rem 0 0.55rem;
+  font-size: 1.08rem;
+  line-height: 1.35;
+}
+
+.project-card p:last-child,
+.project-card ul:last-child {
+  margin-bottom: 0;
+}
+
+.project-kicker {
+  color: #52667a;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 0.75rem;
+}
+
+.project-tag {
+  padding: 0.2rem 0.55rem;
+  border-radius: 999px;
+  background: #edf3ff;
+  color: #214fba;
+  font-size: 0.76rem;
+  font-weight: 600;
+}
+
+body.dark-mode .publication-card,
+body.dark-mode .icon-card,
+body.dark-mode .tool-item,
+body.dark-mode .project-card {
+  border-color: #343b44;
+  background: #1b1f24;
+  box-shadow: none;
+}
+
+body.dark-mode .publication-visual {
+  border-color: #343b44;
+  background: #252b32;
+}
+
+body.dark-mode .publication-title a {
+  color: #f2f4f7;
+}
+
+body.dark-mode .publication-authors,
+body.dark-mode .publication-venue,
+body.dark-mode .project-kicker {
+  color: #b8c2cc;
+}
+
+body.dark-mode .project-tag {
+  background: #243b63;
+  color: #d9e6ff;
+}
+
+@media (max-width: 767.98px) {
+  .mobile-navbar ul {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0.2rem;
+    padding: 0.35rem 0.75rem;
+  }
+
+  .mobile-navbar a {
+    display: block;
+    padding: 0.35rem 0.2rem;
+    text-align: center;
+  }
+
+  .article-style,
+  .publication-content,
+  .publication-title,
+  .publication-authors,
+  .publication-venue,
+  .project-card {
+    min-width: 0;
+    overflow-wrap: anywhere;
+  }
+
+  .article-style > div[style*="display:flex"] > div {
+    min-width: 0;
+  }
+
+  .publication-card {
+    grid-template-columns: 1fr;
+  }
+
+  .publication-visual {
+    max-width: 280px;
+    min-height: 150px;
+  }
+
+  .publication-visual img {
+    height: 150px;
+  }
+
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+}

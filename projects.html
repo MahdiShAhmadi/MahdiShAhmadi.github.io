@@ -3082,7 +3082,7 @@ body.dark-mode {
 
 </style>
 
-    <title>Mahdi Ahmadi | Electrical Engineering</title>
+    <title>Mahdi Ahmadi | Computer Science and AI Projects</title>
     <link rel="icon" href="/Pictures/iconlogo.png" type="png">
     <meta name="google-site-verification" content="qmM2cx9QOHW8c-EpDr5jl02Ho-u9kRWhANf1nLLGuUE" />
     <meta name="theme-color" content="#ffffff">
@@ -3113,8 +3113,8 @@ body.dark-mode {
                             <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                             <li class="nav-item"><a class="nav-link" href="index.html#education">Education</a></li>
                             <li class="nav-item"><a class="nav-link" href="index.html#teaching">Teaching</a></li>
-                            <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
-                            <li class="nav-item"><a class="nav-link active" href="ee.html">EE</a></li>
+                            <li class="nav-item"><a class="nav-link active" href="projects.html">Projects</a></li>
+                            <li class="nav-item"><a class="nav-link" href="ee.html">EE</a></li>
                             <li class="nav-item"><a class="nav-link" href="index.html#publications">Publications</a></li>
                         </ul>
 
@@ -3163,33 +3163,93 @@ body.dark-mode {
                 </div>
 
                 <div class="col-12 col-lg-8">
-                    <h1>Electrical Engineering</h1>
+                    <h1>Computer Science &amp; AI Projects</h1>
                     <div class=article-style>
-                        <p style="text-align: justify;">My Electrical Engineering training at Isfahan University of Technology focused on signals and systems, embedded development, communication circuits, digital design, image processing, and practical implementation work.</p>
-                        <p style="text-align: justify;">This page collects that foundation and its hardware, signal-processing, and communications projects. My computer-science, machine-learning, and production AI work now lives on the separate <a href="projects.html">Projects</a> page.</p>
+                        <p style="text-align: justify;">This page brings together my current machine-learning research, open-source computer-vision work, and production AI systems. The projects span probabilistic modeling, generative AI, causal inference, NLP, recommendation, safety, anomaly detection, and reproducible ML workflows.</p>
+                        <p style="text-align: justify;">Research projects emphasize clear modeling assumptions and repeatable evaluation; industry projects emphasize measurable product impact, reliable deployment, and collaboration across engineering and operations.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="education" class="home-section wg-features">
+    <section id="research-projects" class="home-section wg-features">
         <div class="home-section-bg"></div>
         <div class="container">
             <div class="row">
                 <div class="section-heading col-12 col-lg-4 mb-3 mb-lg-0 d-flex flex-column align-items-center align-items-lg-start">
-                    <h1 class="mb-0">Education</h1>
+                    <h1 class="mb-0">Research Projects</h1>
                 </div>
                 <div class="col-12 col-lg-8">
-                    <div class="article-style icon-grid">
-                        <div class="icon-card">
-                            <img src="Pictures/uni_asu.svg" alt="Arizona State University logo">
-                            <div><strong>Arizona State University</strong><br>Ph.D. in Computer Science</div>
-                        </div>
-                        <div class="icon-card">
-                            <img src="Pictures/uni_iut.svg" alt="Isfahan University of Technology logo">
-                            <div><strong>Isfahan University of Technology</strong><br>M.Sc. and B.Sc. in Electrical Engineering</div>
-                        </div>
+                    <div class="article-style project-grid">
+                        <article class="project-card">
+                            <div class="project-kicker">Generative AI · Fairness</div>
+                            <h2>Fair Image Generation from Pre-trained Models</h2>
+                            <p>Developed probabilistic methods for improving fairness in pre-trained image generators without retraining the large base model from scratch. The work led to a SafeGenAI Workshop publication at NeurIPS 2024.</p>
+                            <div class="project-tags"><span class="project-tag">Probabilistic Modeling</span><span class="project-tag">Generative AI</span><span class="project-tag">PyTorch</span></div>
+                            <div class="project-actions">
+                                <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://openreview.net/forum?id=e7zwwncDYr" target="_blank" rel="noopener">Paper</a>
+                                <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://neurips.cc/virtual/2024/106221" target="_blank" rel="noopener">Workshop</a>
+                            </div>
+                        </article>
+
+                        <article class="project-card">
+                            <div class="project-kicker">Causal Inference</div>
+                            <h2>Individual Treatment-Effect Estimation</h2>
+                            <p>Develop tractable probabilistic-modeling methods for individual treatment-effect estimation and counterfactual inference, with attention to reproducible evaluation and clearly stated assumptions.</p>
+                            <div class="project-tags"><span class="project-tag">Counterfactual Inference</span><span class="project-tag">Causal ML</span><span class="project-tag">Probabilistic Models</span></div>
+                        </article>
+
+                        <article class="project-card">
+                            <div class="project-kicker">Applied ML · Arizona DEMA</div>
+                            <h2>Natural-Disaster Forecasting</h2>
+                            <p>Partner with the Arizona Department of Emergency and Military Affairs on predictive modeling for natural-disaster forecasting, including reproducible pipelines, model evaluation, and technical documentation.</p>
+                            <div class="project-tags"><span class="project-tag">Forecasting</span><span class="project-tag">Model Evaluation</span><span class="project-tag">Reproducibility</span></div>
+                        </article>
+
+                        <article class="project-card">
+                            <div class="project-kicker">Open Source · Computer Vision</div>
+                            <h2>ReDMark</h2>
+                            <p>Built and published an open-source residual-diffusion deep-learning framework for image watermarking, connecting the research method to a codebase that others can run and extend.</p>
+                            <div class="project-tags"><span class="project-tag">Deep Learning</span><span class="project-tag">Watermarking</span><span class="project-tag">TensorFlow</span></div>
+                            <div class="project-actions">
+                                <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://github.com/MahdiShAhmadi/ReDMark" target="_blank" rel="noopener">Code</a>
+                                <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://www.sciencedirect.com/science/article/abs/pii/S0957417419308759" target="_blank" rel="noopener">Paper</a>
+                            </div>
+                        </article>
+
+                        <article class="project-card">
+                            <div class="project-kicker">Computer Vision · M.Sc. Thesis</div>
+                            <h2>Image Retargeting and Saliency</h2>
+                            <p>Combined convolutional networks, semantic segmentation, saliency estimation, and content-aware resizing so retargeted images preserve visually important regions.</p>
+                            <div class="project-tags"><span class="project-tag">CNNs</span><span class="project-tag">Semantic Segmentation</span><span class="project-tag">Image Retargeting</span></div>
+                            <div class="project-actions">
+                                <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://link.springer.com/article/10.1007/s11042-020-10185-0" target="_blank" rel="noopener">Retargeting Paper</a>
+                                <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://ieeexplore.ieee.org/abstract/document/8472577" target="_blank" rel="noopener">Saliency Paper</a>
+                            </div>
+                        </article>
+
+                        <article class="project-card">
+                            <div class="project-kicker">Medical Imaging</div>
+                            <h2>Segmentation and Compression</h2>
+                            <p>Contributed to deep-learning brain-tumor segmentation and to a method for lossless angiogram foreground compression while preserving the visual quality of the background.</p>
+                            <div class="project-tags"><span class="project-tag">Medical Imaging</span><span class="project-tag">Segmentation</span><span class="project-tag">Compression</span></div>
+                            <div class="project-actions">
+                                <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://arxiv.org/abs/1809.07786" target="_blank" rel="noopener">Segmentation Paper</a>
+                                <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://ieeexplore.ieee.org/abstract/document/8513426" target="_blank" rel="noopener">Compression Paper</a>
+                            </div>
+                        </article>
+
+                        <article class="project-card">
+                            <div class="project-kicker">Image Processing</div>
+                            <h2>Artistic Filtering and Controlled Seam Carving</h2>
+                            <p>Worked on instance-aware artistic image filtering with convolutional networks and on seam-carving methods that control the positional distribution of removed seams.</p>
+                            <div class="project-tags"><span class="project-tag">Image Filtering</span><span class="project-tag">CNNs</span><span class="project-tag">Seam Carving</span></div>
+                            <div class="project-actions">
+                                <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://ieeexplore.ieee.org/abstract/document/8661048" target="_blank" rel="noopener">Filtering Paper</a>
+                                <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://ieeexplore.ieee.org/abstract/document/9116888" target="_blank" rel="noopener">Seam-Carving Paper</a>
+                            </div>
+                        </article>
                     </div>
                 </div>
             </div>
@@ -3205,78 +3265,72 @@ body.dark-mode {
                 </div>
                 <div class="col-12 col-lg-8">
                     <div class="article-style tool-grid">
+                        <div class="tool-item"><img src="Pictures/sw_python.svg" alt="Python"><span>Python</span></div>
+                        <div class="tool-item"><img src="Pictures/sw_pytorch.svg" alt="PyTorch"><span>PyTorch</span></div>
+                        <div class="tool-item"><img src="Pictures/sw_tensorflow.svg" alt="TensorFlow"><span>TensorFlow</span></div>
                         <div class="tool-item"><img src="Pictures/sw_c.svg" alt="C"><span>C</span></div>
                         <div class="tool-item"><img src="Pictures/sw_cplusplus.svg" alt="C++"><span>C++</span></div>
-                        <div class="tool-item"><img src="Pictures/sw_octave.svg" alt="Octave"><span>MATLAB / Octave</span></div>
-                        <div class="tool-item"><img src="Pictures/sw_amd.svg" alt="AMD and Xilinx"><span>Vivado / Xilinx</span></div>
-                        <div class="tool-item"><img src="Pictures/sw_python.svg" alt="Python"><span>Python</span></div>
                         <div class="tool-item"><img src="Pictures/sw_linux.svg" alt="Linux"><span>Linux</span></div>
                         <div class="tool-item"><img src="Pictures/sw_git.svg" alt="Git"><span>Git</span></div>
                         <div class="tool-item"><img src="Pictures/sw_docker.svg" alt="Docker"><span>Docker</span></div>
+                        <div class="tool-item"><img src="Pictures/sw_octave.svg" alt="Octave"><span>MATLAB / Octave</span></div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="ee-projects" class="home-section wg-features">
+    <section id="production-projects" class="home-section wg-features">
         <div class="home-section-bg"></div>
         <div class="container">
             <div class="row">
                 <div class="section-heading col-12 col-lg-4 mb-3 mb-lg-0 d-flex flex-column align-items-center align-items-lg-start">
-                    <h1 class="mb-0">EE Projects</h1>
+                    <h1 class="mb-0">Production ML Projects</h1>
                 </div>
                 <div class="col-12 col-lg-8">
                     <div class="article-style project-grid">
                         <article class="project-card">
-                            <div class="project-kicker">Signals and Systems</div>
-                            <h2>Sound Detection with Correlators</h2>
-                            <p>Designed a signal-detection project that used correlation to identify known sound patterns in measured audio.</p>
-                            <div class="project-tags"><span class="project-tag">Signal Processing</span><span class="project-tag">Correlation</span></div>
+                            <div class="project-kicker">Divar · Computer Vision · Automation</div>
+                            <h2>Automated Advertisement Acceptance</h2>
+                            <p>Designed, trained, shadow-tested, and deployed an automated advertisement-acceptance system across seven product verticals. It reached 25% automation and saved work equivalent to 50 operations employees.</p>
+                            <div class="project-tags"><span class="project-tag">Computer Vision</span><span class="project-tag">Shadow Testing</span><span class="project-tag">Production ML</span></div>
                         </article>
 
                         <article class="project-card">
-                            <div class="project-kicker">Embedded Systems</div>
-                            <h2>AVR Audio Transmission</h2>
-                            <p>Built a Digital System Design II project for transmitting sound signals between computers through AVR microcontrollers.</p>
-                            <div class="project-tags"><span class="project-tag">AVR</span><span class="project-tag">C</span><span class="project-tag">Digital Design</span></div>
+                            <div class="project-kicker">Divar · NLP · Safety</div>
+                            <h2>Chat Fraud and Harassment Detection</h2>
+                            <p>Developed chat-safety models from text and numerical features. The fraud model improved precision by 8%, while the harassment model improved precision from 0.26 to 0.44.</p>
+                            <div class="project-tags"><span class="project-tag">NLP</span><span class="project-tag">Classification</span><span class="project-tag">Safety</span></div>
                         </article>
 
                         <article class="project-card">
-                            <div class="project-kicker">Communications</div>
-                            <h2>Image Transmission through AWGN</h2>
-                            <p>Simulated digital-image transmission through additive white Gaussian noise channels for Communication Systems I.</p>
-                            <div class="project-tags"><span class="project-tag">Simulink</span><span class="project-tag">AWGN</span><span class="project-tag">Digital Communications</span></div>
+                            <div class="project-kicker">Divar · Anomaly Detection</div>
+                            <h2>Abnormal Advertisement Detection</h2>
+                            <p>Built an anomaly detector using text embeddings and time-series behavior to identify abnormal advertisements and support operational and business decisions.</p>
+                            <div class="project-tags"><span class="project-tag">Embeddings</span><span class="project-tag">Time Series</span><span class="project-tag">Anomaly Detection</span></div>
                         </article>
 
                         <article class="project-card">
-                            <div class="project-kicker">FPGA</div>
-                            <h2>Serial Transmission Protocol</h2>
-                            <p>Implemented a heuristic serial-transmission protocol on a Xilinx Spartan II FPGA as a course project.</p>
-                            <div class="project-tags"><span class="project-tag">Xilinx</span><span class="project-tag">FPGA</span><span class="project-tag">Digital Logic</span></div>
+                            <div class="project-kicker">Divar · Recommendation</div>
+                            <h2>Job-Seeker Recommendation Systems</h2>
+                            <p>Designed collaborative-filtering and content-based recommenders, evaluated them through A/B tests, and increased job-seeker engagement by 11%.</p>
+                            <div class="project-tags"><span class="project-tag">A/B Testing</span><span class="project-tag">Collaborative Filtering</span><span class="project-tag">Content-Based Retrieval</span></div>
                         </article>
 
                         <article class="project-card">
-                            <div class="project-kicker">Communication Circuits</div>
-                            <h2>Wireless FSK Audio Link</h2>
-                            <p>Designed and implemented circuits for transmitting sound wirelessly using frequency-shift keying modulation.</p>
-                            <div class="project-tags"><span class="project-tag">FSK</span><span class="project-tag">Circuit Design</span><span class="project-tag">Wireless</span></div>
+                            <div class="project-kicker">Divar · ML Infrastructure</div>
+                            <h2>Scalable Experimentation and Retrieval</h2>
+                            <p>Built production workflows with Python, PySpark, and Airflow and evaluated FAISS, Milvus, and Elasticsearch for large-scale recommendation and vector-retrieval use cases.</p>
+                            <div class="project-tags"><span class="project-tag">PySpark</span><span class="project-tag">Airflow</span><span class="project-tag">Vector Search</span></div>
                         </article>
 
                         <article class="project-card">
-                            <div class="project-kicker">Engineering Internship</div>
-                            <h2>HDMI Output on Xilinx ZC-702</h2>
-                            <p>Enabled HDMI image transmission on a Xilinx ZC-702 board at the Medical Image and Signal Processing Research Center.</p>
-                            <div class="project-tags"><span class="project-tag">Zynq</span><span class="project-tag">HDMI</span><span class="project-tag">Hardware Integration</span></div>
-                        </article>
-
-                        <article class="project-card">
-                            <div class="project-kicker">Radar Signal Processing</div>
-                            <h2>Learning-Based Radar Sequence Design</h2>
-                            <p>Contributed to optimization-driven binary sequence design for SISO and MIMO radar systems with an emphasis on correlation properties.</p>
+                            <div class="project-kicker">Web Engineering</div>
+                            <h2>Portfolio and Publication Hub</h2>
+                            <p>Built and maintain this responsive static site to organize research, publication assets, project details, code links, and an ATS-friendly downloadable CV.</p>
+                            <div class="project-tags"><span class="project-tag">HTML</span><span class="project-tag">CSS</span><span class="project-tag">GitHub Pages</span></div>
                             <div class="project-actions">
-                                <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://ieeexplore.ieee.org/abstract/document/10138370" target="_blank" rel="noopener">Journal Paper</a>
-                                <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://ieeexplore.ieee.org/abstract/document/9266467" target="_blank" rel="noopener">Conference Paper</a>
+                                <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://github.com/MahdiShAhmadi/MahdiShAhmadi.github.io" target="_blank" rel="noopener">Source</a>
                             </div>
                         </article>
                     </div>
@@ -3339,11 +3393,11 @@ body.dark-mode {
     <script>
     document.addEventListener("DOMContentLoaded", function () {
       const sentences = [
-        "EE foundations, practical engineering.",
-        "Electrical Engineering background from IUT.",
-        "Signals, systems, embedded design, and communications.",
-        "Projects spanning FPGAs, wireless audio, and image transmission.",
-        "Research experience in radar sequence design."
+        "Research and production AI systems.",
+        "Probabilistic modeling, generative AI, and causal inference.",
+        "Computer vision, NLP, recommendation, and safety.",
+        "Reproducible research and measurable product impact.",
+        "Open-source work and scalable ML workflows."
       ];
 
       const textElement = document.getElementById("typed-text");
